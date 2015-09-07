@@ -42,14 +42,14 @@
     [self setHeaderTableView];
     self.tableView = [[UITableView alloc] init];
     self.footerTableView = [[UIView alloc] init];
-//    [self setFooterTableView];
+    [self setFooterTableView];
     self.botView = [[UIView alloc] init];
-//    [self setBotView];
+    [self setBotView];
 
     // set background for views
     [self.topView setBackgroundColor:[UIColor grayColor]];
     [self.headerTableView setBackgroundColor:[UIColor greenColor]];
-    [self.footerTableView setBackgroundColor:[UIColor blueColor]];
+    [self.footerTableView setBackgroundColor:[UIColor orangeColor]];
     [self.botView setBackgroundColor:[UIColor grayColor]];
 
     // add subview
@@ -182,34 +182,65 @@
     [self.headerTableView addConstraints:verticalConstraints1];
 }
 
-//-(void)setFooterTableView{
-//    // init subviews
-//    UILabel* totalMemberLable = [[UILabel alloc] init];
-//    [totalMemberLable setText:@"So Many People"];
-//    [totalMemberLable setTextAlignment:NSTextAlignmentRight];
-//    
-//    // add subview
-//    [self.headerTableView addSubview:totalMemberLable];
-//    
-//    // set Translates Autoresizing Mask Into Constraints
-//    [totalMemberLable setTranslatesAutoresizingMaskIntoConstraints:NO];
-//    
-//    // create dictionary views
-//    NSDictionary* views = NSDictionaryOfVariableBindings(totalMemberLable);
-//    
-//    // create list constraint
-//    NSArray* horizontalConstraints1 = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|->=0-[totalMemberLable(125)]|" options:NSLayoutFormatAlignAllTop metrics:nil views:views];
-//    
-//    NSArray* verticalConstraints1 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-4-[totalMemberLable]-5-|" options:0 metrics:nil views:views];
-//    
-//    // add constraint
-//    [self.footerTableView addConstraints:horizontalConstraints1];
-//    [self.footerTableView addConstraints:verticalConstraints1];
-//}
-//
-//- (void)setBotView
-//{
-//    
-//}
+- (void)setFooterTableView
+{
+    // init subviews
+    UILabel* totalMemberLable = [[UILabel alloc] init];
+    [totalMemberLable setText:@"So Many People"];
+    [totalMemberLable setTextAlignment:NSTextAlignmentRight];
+
+    // add subview
+    [self.footerTableView addSubview:totalMemberLable];
+
+    // set Translates Autoresizing Mask Into Constraints
+    [totalMemberLable setTranslatesAutoresizingMaskIntoConstraints:NO];
+
+    // create dictionary views
+    NSDictionary* views = NSDictionaryOfVariableBindings(totalMemberLable);
+
+    // create list constraint
+    NSArray* horizontalConstraints1 = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|->=0-[totalMemberLable(130)]|" options:0 metrics:nil views:views];
+
+    NSArray* verticalConstraints1 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-4-[totalMemberLable]-5-|" options:0 metrics:nil views:views];
+
+    // add constraint
+    [self.footerTableView addConstraints:horizontalConstraints1];
+    [self.footerTableView addConstraints:verticalConstraints1];
+}
+
+- (void)setBotView
+{
+    // init subviews
+    UIView *firstSubview = [[UIView alloc] init];
+    UIView *secondSubview = [[UIView alloc] init];
+    UIView *thirdSubview = [[UIView alloc] init];
+    
+    // set background color
+    [firstSubview setBackgroundColor:[UIColor greenColor]];
+    [secondSubview setBackgroundColor:[UIColor greenColor]];
+    [thirdSubview setBackgroundColor:[UIColor greenColor]];
+    
+    // add subview
+    [self.botView addSubview:firstSubview];
+    [self.botView addSubview:secondSubview];
+    [self.botView addSubview:thirdSubview];
+    
+    // set Translates Autoresizing Mask Into Constraints
+    [firstSubview setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [secondSubview setTranslatesAutoresizingMaskIntoConstraints:NO];
+    [thirdSubview setTranslatesAutoresizingMaskIntoConstraints:NO];
+    
+    // create dictionary views
+    NSDictionary* views = NSDictionaryOfVariableBindings(firstSubview, secondSubview, thirdSubview);
+    
+    // create list constraint
+    NSArray* horizontalConstraints1 = [NSLayoutConstraint constraintsWithVisualFormat:@"H:|-10-[firstSubview(50)]-20-[secondSubview(50)]-20-[thirdSubview(50)]->=0-|" options:NSLayoutFormatAlignAllTop | NSLayoutFormatAlignAllBottom metrics:nil views:views];
+    
+    NSArray* verticalConstraints1 = [NSLayoutConstraint constraintsWithVisualFormat:@"V:|-15-[firstSubview]-13-|" options:0 metrics:nil views:views];
+    
+    // add constraint
+    [self.botView addConstraints:horizontalConstraints1];
+    [self.botView addConstraints:verticalConstraints1];
+}
 
 @end
