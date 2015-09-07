@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>50471E22-8512-4CCC-AD9F-2CBD6FD4BEEA</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AutolayoutExercise</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6045E2A0D487003F4C117A5E811D2D1BE5059624</key>
+		<string>ssh://gitlab.tctav.com:15022/mobile/iOS-Training.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>src/viet.na/Auto Layout &amp; Size Classes /AutolayoutExercise/AutolayoutExercise.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6045E2A0D487003F4C117A5E811D2D1BE5059624</key>
+		<string>../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://gitlab.tctav.com:15022/mobile/iOS-Training.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6045E2A0D487003F4C117A5E811D2D1BE5059624</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6045E2A0D487003F4C117A5E811D2D1BE5059624</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Training</string>
+		</dict>
+	</array>
+</dict>
+</plist>
